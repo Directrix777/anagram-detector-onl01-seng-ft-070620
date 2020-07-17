@@ -9,7 +9,6 @@ class Anagram
   end
 
   def match(array)
-    binding.pry
     word_alpha = @word.chars.sort
     #alphabetizing the letters in our word.
     array.each{|anagram| return anagram if anagram.chars.sort == word_alpha}
