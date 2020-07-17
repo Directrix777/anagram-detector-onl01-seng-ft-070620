@@ -14,6 +14,7 @@ class Anagram
     array.each{|anagram| return anagram if anagram.chars.sort == word_alpha}
     #alphabatizing the letters of each possible match,
     #then comparing each alphabetized string to our alphabetized word
+    []#returns this if #each returns nothing
   end
 
 end
