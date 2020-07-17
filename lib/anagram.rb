@@ -10,11 +10,12 @@ class Anagram
 
   def match(array)
     word_alpha = @word.chars.sort
+    matches = []
     #alphabetizing the letters in our word.
-    array.each{|anagram| return anagram if anagram.chars.sort == word_alpha}
+    array.each{|anagram| matches << anagram if anagram.chars.sort == word_alpha}
     #alphabatizing the letters of each possible match,
     #then comparing each alphabetized string to our alphabetized word
-    []#returns this if #each returns nothing
+    matches
   end
 
 end
