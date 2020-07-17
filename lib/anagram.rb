@@ -12,7 +12,7 @@ class Anagram
     #alphabetizing the letters in our word.
     array.each{|anagram| return anagram if anagram.chars.sort == word_alpha}
     #alphabatizing the letters of each possible match,
-    #then comparing each aplhabetized string to our alphabetized word
+    #then comparing each alphabetized string to our alphabetized word
   end
 
 end
